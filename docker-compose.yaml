@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  playground:
+    build: ./cpp
+    image: cpp-playground:latest
+    container_name: cpp-playground
+    working_dir: /workspace/src
+    entrypoint: bash run.sh
+    volumes:
+      - ./workspace/src:/workspace/src
