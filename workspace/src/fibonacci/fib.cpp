@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// 1-based
 int fib_rec(int n)
 {
     if(n <= 2)
@@ -12,6 +13,7 @@ int fib_rec(int n)
     return fib_rec(n-1)+fib_rec(n-2);
 }
 
+// 0-based
 int fib_loop(int n)
 {
     int f[n+1];
